@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/drawable/ic_add.xml" value="0.2075" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/layout/activity_shopping.xml" value="0.264" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/layout/dialog_add_shopping_item.xml" value="0.536" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/layout/shopping_item.xml" value="0.3372093023255814" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_add.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_add_round.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_delete.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_delete_round.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_minus.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_minus_round.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_plus.xml" value="0.117" />
+        <entry key="..\:/Users/Rohit/AndroidStudioProjects/ShoppingList/app/src/main/res/mipmap-anydpi-v26/ic_plus_round.xml" value="0.117" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

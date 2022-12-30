@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	>
+	
+	<ImageView
+		android:id="@+id/ivCake"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@drawable/cake"
+		/>
+	
+	<TextView
+		android:id="@+id/textView_greet"
+		android:layout_width="320dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="25dp"
+		android:fontFamily="@font/akaya_telivigala"
+		android:gravity="center"
+		android:letterSpacing="0.1"
+		android:padding="10dp"
+		android:textColor="@color/light_blue"
+		android:textSize="35sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.1"
+		app:lineHeight="45dp"
+		/>
+	<TextView
+		android:id="@+id/textView_from"
+		android:layout_width="239dp"
+		android:layout_height="112dp"
+		android:layout_marginTop="616dp"
+		android:fontFamily="cursive"
+		android:gravity="center"
+		android:letterSpacing="0.1"
+		android:padding="5dp"
+		android:text="@string/from_message"
+		android:textColor="@color/teal_700"
+		android:textSize="35sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
