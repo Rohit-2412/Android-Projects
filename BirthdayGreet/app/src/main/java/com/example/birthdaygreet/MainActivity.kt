@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         button.setOnClickListener {
-            val message = findViewById<EditText>(R.id.editText_name).editableText.toString();
+            val message = findViewById<EditText>(R.id.editText_name).editableText.toString()
             Log.d("error", message)
 
             val intent = Intent(this, BirthdayGreetingActivity::class.java).apply {
