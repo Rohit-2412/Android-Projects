@@ -14,6 +14,8 @@
 		android:layout_height="match_parent"
 		android:scaleType="centerCrop"
 		android:src="@drawable/cake"
+		app:srcCompat="@drawable/greeting"
+		tools:srcCompat="@drawable/greeting"
 		/>
 	
 	<TextView
