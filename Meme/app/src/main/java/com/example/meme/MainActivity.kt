@@ -4,8 +4,11 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.ProgressBar
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
         loadMeme()
 
         // function to load the next meme
@@ -34,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             intent.type = "text/plain"
             intent.putExtra(
                 Intent.EXTRA_TEXT,
-                "Hey, Checkout this cool meme I go from Reddit $imgUrl"
+                "Hey, Checkout this cool meme I got from Reddit $imgUrl"
             )
 
             val choice = Intent.createChooser(intent, "Share this meme using...")
@@ -43,18 +47,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private var imgUrl: String? = null
+    private var title : String? = ""
     private fun loadMeme() {
         findViewById<ProgressBar>(R.id.pbLoading).visibility = View.VISIBLE
 
-        val url = "https://meme-api.herokuapp.com/gimme"
+        val url = "https://meme-api.com/gimme"
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, url, null, { response ->
                 imgUrl = response.getString("url")
+                title = response.getString("title")
 
                 if (imgUrl.isNullOrBlank()) {
                     loadMeme()
                 }
 
+                findViewById<TextView>(R.id.title).text = title
                 Glide.with(this).load(imgUrl).listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(
                         e: GlideException?,
